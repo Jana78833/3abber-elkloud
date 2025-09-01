@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header-1 {
+    background-color:#000000;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: -1px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 180px;
+}
+
+.header-1 .logo{
+      font-family: "Aref Ruqaa", serif;
+}
+
+.header-1  ul {
+    list-style: none;
+     padding: 0;
+    margin-top: 10px;
+}
+
+.header-1 nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.header-1 nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.Perfume-advisor{
+    background-image: url(27e2ebce026e98675d9b8b296a73ad7b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98%;
+    height: 600px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-left: 15px;
+    box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;          
+}
+
+.pa-h{
+     font-size: 28px;
+     font-family: "Story Script", sans-serif;
+     transform: translate(50px ,-130px);
+     color: #000000;
+}
+.pa-h2{
+    color: #525252;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    transform: translate(-70px,-20px);
+
+
+}
+.pa-butt{
+     line-height: 20px; 
+     transform:translateX(-760px);
+}
+.pa-butt button {
+    margin: 0 10px;
+    background-color: #00000065;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border-color: #aaaaaa;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.244); 
+
+    
+}
+.pa-butt button a{
+    text-decoration: none;
+    color: #fefefe;
+}
+
+/* Grid المنتجات */
+.container{
+    width: 95%;
+    
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    justify-content: space-around;
+    gap: 660px;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 20px 0;
+    height: 90px;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.244); 
+
+}
+.icon-cart{
+    position: relative;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large;
+}
+.listProduct .item img{
+    width: 80%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    background-color: #EEEEE6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #a7a7a7;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* cart */
+.cartTab{
+    width: 400px;
+    background-color: #6f6f6f;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    border-radius: 20px;
+    z-index: 1000;
+}
+.cartTab.active{
+  right: 0;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #454545;
+    border-radius: 10px;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+/* Grid المنتجات */
+.Delicate, .relax, .Peace-of-mind {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* الكارت */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  background-color: #848484;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-inf {
+  padding: 12px;
+}
+
+.card-inf .name {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.card-inf p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* زرار Add to Cart */
+.addCart {
+  margin-top: 12px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #000;   
+  color: #fff;              
+
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.addCartt:hover {
+  background-color: #222;  
+  transform: scale(1.08);
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.3);
+}
+/* الصورة الطايرة */
+.fly-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/*  cart item */
+.listCart .cart-item {
+    display: grid;
+    grid-template-columns: 70px 150px 1fr 50px;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 10px ;
+}
+.listCart .cart-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+.listCart .cart-item .cart-details {
+    text-align: left;
+}
+.listCart .cart-item .quantity button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listCart .cart-item .remove {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+   width: 100%;
+   height: 90px;
+   background-color: #000;
+   margin-top: 60px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   gap: 40px;
+
+}
+footer a{
+  margin-top: 40px;
+}
+
+
+/* 📱 للموبايل */
+@media (max-width: 768px) {
+  .header-1 {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .header-1 nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+  }
+
+  .Perfume-advisor {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .pa-h {
+    font-size: 22px;
+    transform: none;
+    text-align: center;
+  }
+
+  .pa-h2 {
+    font-size: 16px;
+    transform: none;
+    text-align: center;
+  }
+
+  .pa-butt {
+    transform: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .listProduct {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .Delicate, .relax, .Peace-of-mind {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+  }
+}
+
+/* 📲 شاشات أصغر (الموبايل الصغير جداً) */
+@media (max-width: 480px) {
+  .listProduct {
+    grid-template-columns: 1fr;
+  }
+
+  .Delicate, .relax, .Peace-of-mind {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .pa-h {
+    font-size: 20px;
+  }
+
+  .pa-h2 {
+    font-size: 14px;
+  }
+}

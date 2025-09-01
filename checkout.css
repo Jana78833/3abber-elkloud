@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+.checkout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ملخص الطلب */
+.order-summary {
+  flex: 1;
+  background: #1c1c1c;
+  padding: 30px;
+  border-right: 2px solid #333;
+}
+
+.order-summary h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.order-item img {
+  width: 50px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.order-item-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-summary h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.payment-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.order-summary button:hover {
+  background: #666;
+}
+
+/* نموذج الدفع */
+.payment-form {
+  flex: 1;
+  background: #222;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.payment-form h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.payment-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.payment-form input,
+.payment-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background: #333;
+  color: #eee;
+}
+
+.payment-form input:focus,
+.payment-form textarea:focus {
+  outline: 2px solid #666;
+}
+
+.thankyou{
+    display:none;
+    text-align:center; 
+    margin-top:300px;
+    font-family: "Story Script", sans-serif;
+
+}

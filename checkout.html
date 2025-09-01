@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bebas+Neue&family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Dosis:wght@200..800&family=Kufam:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+PL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@582&family=Story+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <div class="checkout-container" id="checkout-section">
+    
+    <!-- شمال: ملخص الطلب -->
+    <div class="order-summary">
+      <h2>Your Order</h2>
+      <div id="orderItems"></div>
+      <hr>
+      <h3>Total: <span id="finalTotal">$0</span></h3>
+     
+    </div>
+
+
+    <div class="payment-form">
+      <h2>Billing Details</h2>
+      <form id="checkout-form">
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone</label>
+        <input type="tel" pattern="[0-9]{11}" required>
+
+        <label>Address</label>
+        <textarea required></textarea>
+
+        <label>Card Number</label>
+        <input type="text" id="cardNumber" maxlength="19" placeholder="#### #### #### ####" required> 
+        <button id="placeOrder">Place Order</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="thankyou" class="thankyou">
+    <h1>Thank you for your purchase!</h1>
+    <p>Your order has been placed successfully.✅ </p>
+  </div>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
+
