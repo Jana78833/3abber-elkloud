@@ -1,5 +1,5 @@
 
-// عناصر أساسية
+
 let iconCart = document.querySelector('.icon-cart');
 let cartTab = document.querySelector('.cartTab');
 let closeBtn = document.querySelector('.close');
@@ -26,9 +26,9 @@ addCartBtns.forEach(button => {
     let productCard = this.closest('.card');
     let id = productCard.dataset.id;
     let name = productCard.querySelector('.name').innerText;
-    let price = parseFloat(productCard.dataset.price); // ناخد السعر من data-price
+    let price = parseFloat(productCard.dataset.price); 
     let imgSrc = productCard.querySelector('img').src;
-    let productImage = productCard.querySelector('img'); // للأنيميشن
+    let productImage = productCard.querySelector('img');
 
     let product = { id, name, price, imgSrc, quantity: 1 };
 
@@ -108,19 +108,19 @@ function updateCart() {
   }
 }
 
-// زرار الدفع → يروح checkout.html
+
 checkOutBtn.addEventListener('click', () => {
   if (cart.length === 0) {
     alert("Your cart is empty!");
     return;
   }
-  // خزّن السلة
+ 
   localStorage.setItem("cart", JSON.stringify(cart));
   // روح للـ checkout
   window.location.href = "checkout.html";
 });
 
-// 🟢 دالة الأنيميشن (الصورة تطير للسلة)
+//  دالة الأنيميشن (الصورة تطير للسلة)
 function flyToCart(image, targetCart) {
     if (!image || !targetCart) return;
 
@@ -150,3 +150,4 @@ function flyToCart(image, targetCart) {
         imgClone.remove();
     }, 1000);
 }
+
