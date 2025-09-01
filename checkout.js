@@ -1,8 +1,8 @@
 
-// جلب البيانات من localStorage
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// عناصر
+
 let orderItems = document.getElementById("orderItems");
 let finalTotal = document.getElementById("finalTotal");
 let checkoutForm = document.getElementById("checkout-form");
@@ -75,7 +75,7 @@ checkoutForm.addEventListener("submit", function (e) {
     return;
   }
 
-  // ✅ لو كله تمام → عرض رسالة الشكر
+
   checkoutSection.style.display = "none";
   thankyouMsg.style.display = "block";
 
@@ -85,3 +85,4 @@ checkoutForm.addEventListener("submit", function (e) {
 
 // تشغيل عند تحميل الصفحة
 displayOrder();
+
