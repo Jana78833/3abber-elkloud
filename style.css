@@ -370,7 +370,7 @@ footer a{
 }
 
 
-/* 📱 للموبايل */
+
 @media (max-width: 768px) {
   .header-1 {
     flex-direction: column;
@@ -442,7 +442,7 @@ footer a{
   }
 }
 
-/* 📲 شاشات أصغر (الموبايل الصغير جداً) */
+
 @media (max-width: 480px) {
   .listProduct {
     grid-template-columns: 1fr;
@@ -464,3 +464,4 @@ footer a{
     font-size: 14px;
   }
 }
+
